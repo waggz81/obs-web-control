@@ -1,0 +1,22 @@
+extends layout
+
+block content
+  h1 OBS Web Control
+  form.form-horizontal
+    fieldset
+      .form-group.pull-left
+        .col-md-10
+          input#seconds.form-control.input-md(name='seconds', type='text', placeholder='Seconds')
+
+      // Button
+      .row
+      .form-group
+        //label.col-md-4.control-label Button Group
+        .col-md-4
+          div.form-group.btn-group-vertical.btn-group-md(role="group")
+            button.btn.btn-default#fibbagestart(type='button', onclick='fibbageStart();', name='buttongroup') Start New Fibbage
+            button.btn.btn-default#fibbage1(type='button', onclick='buttonClick(this.id);') Hide Room Code
+            button.btn.btn-default#fibbage2(type='button', onclick='buttonClick(this.id);') Chat + Timer
+            button.btn.btn-default#fibbage3(type='button', onclick='buttonClick(this.id);') Normal Fibbage w/ Chat
+
+            button.btn.btn-default#brb(type='button', onclick='buttonClick(this.id);') BRB

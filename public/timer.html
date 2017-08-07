@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Timer</title>
+    <link rel="stylesheet" href="/stylesheets/flipclock.css">
+</head>
+<body bgcolor="#3b3c42">
+<div class="mytimer" id="mytimer"></div>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="/javascripts/flipclock.min.js"></script>
+<script>
+    $(function(){
+        let seconds = 1;
+        window.opener.popupclock = new FlipClock($('.mytimer'),seconds,{
+            clockFace: 'MinuteCounter',
+            countdown: true
+        });
+    });
+</script>
+</body>
+</html>
