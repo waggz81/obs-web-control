@@ -57,3 +57,8 @@ exports.switchScene = function (sceneName) {
     mixer.setCurrentScene({'scene-name': sceneName});
     twitch.setCurrentScene({'scene-name': sceneName});
 };
+
+exports.toggleStreaming = function () {
+    mixer.StartStopStreaming();
+    twitch.StartStopStreaming();
+};

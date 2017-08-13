@@ -9,6 +9,12 @@ function buttonClick(buttonId) {
     });
 
 }
+function toggleStream() {
+    $.post("/action/togglestream", '', function (data) {
+        console.log(data);
+    });
+
+}
 
 function fibbageStart(seconds) {
     window.popupclock.stop();

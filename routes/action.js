@@ -10,4 +10,10 @@ router.post('/', function(req, res, next) {
     res.send('ok');
 });
 
+router.post('/togglestream', function(req, res, next) {
+    control.toggleStreaming();
+    res.send('ok');
+});
+
+
 module.exports = router;

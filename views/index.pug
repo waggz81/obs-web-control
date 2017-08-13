@@ -1,7 +1,6 @@
 extends layout
-
 block content
-  h1 OBS Web Control
+  h4 OBS Web Control
   form.form-horizontal
     fieldset
       .form-group.pull-left
@@ -20,3 +19,5 @@ block content
             button.btn.btn-default#fibbage3(type='button', onclick='buttonClick(this.id);') Normal Fibbage w/ Chat
 
             button.btn.btn-default#brb(type='button', onclick='buttonClick(this.id);') BRB
+            button.btn.btn-default#togglestream(type='button', onclick='toggleStream();') Toggle Stream
+
