@@ -5,5 +5,5 @@ Use web app to control duplicate versions of OBS for streaming to Twitch and Mix
 https://youtu.be/eIeoZS79ckE
 
 # Credits
-OBS Websocket plugin: https://github.com/Palakis/obs-websocket
-npm library: https://github.com/haganbmj/obs-websocket-js
+* OBS Websocket plugin: https://github.com/Palakis/obs-websocket
+* npm library: https://github.com/haganbmj/obs-websocket-js
